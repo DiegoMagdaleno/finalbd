@@ -1,0 +1,102 @@
+{
+  "20": {
+    "host": "shard-5",
+    "port": 3406,
+    "database": "store_20"
+  },
+  "5": {
+    "host": "shard-2",
+    "port": 3406,
+    "database": "store_5"
+  },
+  "14": {
+    "host": "shard-4",
+    "port": 3406,
+    "database": "store_14"
+  },
+  "4": {
+    "host": "shard-1",
+    "port": 3406,
+    "database": "store_4"
+  },
+  "2": {
+    "host": "shard-1",
+    "port": 3406,
+    "database": "store_2"
+  },
+  "7": {
+    "host": "shard-2",
+    "port": 3406,
+    "database": "store_7"
+  },
+  "12": {
+    "host": "shard-3",
+    "port": 3406,
+    "database": "store_12"
+  },
+  "8": {
+    "host": "shard-2",
+    "port": 3406,
+    "database": "store_8"
+  },
+  "1": {
+    "host": "shard-1",
+    "port": 3406,
+    "database": "store_1"
+  },
+  "10": {
+    "host": "shard-3",
+    "port": 3406,
+    "database": "store_10"
+  },
+  "13": {
+    "host": "shard-4",
+    "port": 3406,
+    "database": "store_13"
+  },
+  "9": {
+    "host": "shard-3",
+    "port": 3406,
+    "database": "store_9"
+  },
+  "18": {
+    "host": "shard-5",
+    "port": 3406,
+    "database": "store_18"
+  },
+  "11": {
+    "host": "shard-3",
+    "port": 3406,
+    "database": "store_11"
+  },
+  "16": {
+    "host": "shard-4",
+    "port": 3406,
+    "database": "store_16"
+  },
+  "3": {
+    "host": "shard-1",
+    "port": 3406,
+    "database": "store_3"
+  },
+  "19": {
+    "host": "shard-5",
+    "port": 3406,
+    "database": "store_19"
+  },
+  "6": {
+    "host": "shard-2",
+    "port": 3406,
+    "database": "store_6"
+  },
+  "17": {
+    "host": "shard-5",
+    "port": 3406,
+    "database": "store_17"
+  },
+  "15": {
+    "host": "shard-4",
+    "port": 3406,
+    "database": "store_15"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "8": {
+    "database": "store_8",
+    "host": "localhost",
+    "port": 3408
+  },
+  "2": {
+    "database": "store_2",
+    "host": "localhost",
+    "port": 3407
+  },
+  "7": {
+    "database": "store_7",
+    "host": "localhost",
+    "port": 3408
+  },
+  "13": {
+    "database": "store_13",
+    "host": "localhost",
+    "port": 3410
+  },
+  "12": {
+    "database": "store_12",
+    "host": "localhost",
+    "port": 3409
+  },
+  "10": {
+    "database": "store_10",
+    "host": "localhost",
+    "port": 3409
+  },
+  "11": {
+    "database": "store_11",
+    "host": "localhost",
+    "port": 3409
+  },
+  "16": {
+    "database": "store_16",
+    "host": "localhost",
+    "port": 3410
+  },
+  "14": {
+    "database": "store_14",
+    "host": "localhost",
+    "port": 3410
+  },
+  "6": {
+    "database": "store_6",
+    "host": "localhost",
+    "port": 3408
+  },
+  "5": {
+    "database": "store_5",
+    "host": "localhost",
+    "port": 3408
+  },
+  "4": {
+    "database": "store_4",
+    "host": "localhost",
+    "port": 3407
+  },
+  "9": {
+    "database": "store_9",
+    "host": "localhost",
+    "port": 3409
+  },
+  "15": {
+    "database": "store_15",
+    "host": "localhost",
+    "port": 3410
+  },
+  "17": {
+    "database": "store_17",
+    "host": "localhost",
+    "port": 3411
+  },
+  "19": {
+    "database": "store_19",
+    "host": "localhost",
+    "port": 3411
+  },
+  "18": {
+    "database": "store_18",
+    "host": "localhost",
+    "port": 3411
+  },
+  "3": {
+    "database": "store_3",
+    "host": "localhost",
+    "port": 3407
+  },
+  "1": {
+    "database": "store_1",
+    "host": "localhost",
+    "port": 3407
+  },
+  "20": {
+    "database": "store_20",
+    "host": "localhost",
+    "port": 3411
+  }
+}
