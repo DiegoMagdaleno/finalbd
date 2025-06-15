@@ -24,6 +24,15 @@ const SalesDashboard = () => {
     };
 
     fetchRecentSales();
+    
+    const handleSaleCreated = () => {
+      setLoading(true);
+      fetchRecentSales();
+    };
+    window.addEventListener('sale:created', handleSaleCreated);
+
+
+    return () => window.removeEventListener('sale:created', handleSaleCreated);
   }, [user]); // El efecto se ejecuta cuando 'user' esté disponible
 
   if (loading) {
@@ -52,9 +61,9 @@ const SalesDashboard = () => {
               recentSales.map(sale => (
                 <tr key={sale.id} className="border-b border-gray-200">
                   <td className="px-5 py-4 text-sm">{sale.id}</td>
-                  <td className="px-5 py-4 text-sm">{new Date(sale.sale_date).toLocaleString()}</td>
-                  <td className="px-5 py-4 text-sm font-semibold">${parseFloat(sale.total_amount).toFixed(2)}</td>
-                  <td className="px-5 py-4 text-sm">{sale.item_count}</td>
+                  <td className="px-5 py-4 text-sm">{new Date(sale.timestamp).toLocaleString()}</td>
+                  <td className="px-5 py-4 text-sm font-semibold">${parseFloat(sale.amount).toFixed(2)}</td>
+                  <td className="px-5 py-4 text-sm">{sale.quantity}</td>
                 </tr>
               ))
             ) : (

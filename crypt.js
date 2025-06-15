@@ -1,7 +1,7 @@
 // hash.js
 const bcrypt = require('bcryptjs');
 
-const password = 'secret123';
+const password = 'admin123';
 
 bcrypt.hash(password, 10).then(hash => {
   console.log('Hash:', hash);

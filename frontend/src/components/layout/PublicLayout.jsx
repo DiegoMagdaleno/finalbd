@@ -1,11 +1,15 @@
 // src/components/layout/PublicLayout.jsx
 
 import React from 'react';
+import Cart from '../Cart';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
+import { useCart } from '../../context/CartContext';
+import { ShoppingCartIcon } from '@heroicons/react/24/outline';
 
 const PublicLayout = ({ children }) => {
-    const { isAuthenticated, logout, user } = useAuth();
+    const { isAuthenticated, logout } = useAuth();
+    const { totalItems, setIsCartOpen } = useCart();
     const navigate = useNavigate();
 
     const handleLogout = () => {
@@ -27,6 +31,17 @@ const PublicLayout = ({ children }) => {
                                 Panel Admin
                             </Link>
                         )}
+                        <button 
+                            onClick={() => setIsCartOpen(true)}
+                            className="relative p-2 text-white hover:text-koppel-yellow"
+                        >
+                            <ShoppingCartIcon className="h-6 w-6" />
+                            {totalItems > 0 && (
+                                <span className="absolute -top-1 -right-1 bg-koppel-yellow text-koppel-blue text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                                    {totalItems}
+                                </span>
+                            )}
+                        </button>
                         <button
                             onClick={isAuthenticated ? handleLogout : () => navigate('/login')}
                             className="px-5 py-2 font-bold text-koppel-blue bg-koppel-yellow rounded-full hover:bg-yellow-400 transition-transform transform hover:scale-105"
@@ -44,6 +59,7 @@ const PublicLayout = ({ children }) => {
                     &copy; {new Date().getFullYear()} Koppel. Proyecto Universitario.
                 </div>
             </footer>
+            <Cart />
         </div>
     );
 };
