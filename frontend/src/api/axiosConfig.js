@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:3000/api', // La URL base de tu API
+  baseURL: '/api', // ¡Cambiado! Nginx se encargará de redirigir esto.
 });
 
 // Interceptor para agregar el token a las cabeceras

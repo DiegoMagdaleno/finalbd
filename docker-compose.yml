@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  # ----- Frontend Service (React + Nginx) -----
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "80:3000" # Mapea el puerto 80 del contenedor al puerto 80 de tu máquina
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  # ----- Backend Service (Node.js API) -----
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile # Especifica el Dockerfile en la raíz
+    restart: unless-stopped
+    environment:
+      # Variable para conectar a la DB que corre fuera de Docker
+      DB_HOST: "host.docker.internal" # DNS especial que apunta a tu máquina host
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${CENTRAL_DB_NAME}
+      JWT_SECRET: ${JWT_SECRET}
+    expose:
+      - "3000" # Expuesto solo a la red interna de Docker
